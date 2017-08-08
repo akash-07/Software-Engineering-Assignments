@@ -13,4 +13,20 @@ app according to the domain of help needed. The people skilled enough and regist
 domain are instantly pinged. The first person who gets back to you gets the job. He shows up at your door, 
 finishes your work and that's it. We can get help with anything at our doorstep with HelpYou :)
 
+--------------------
+**Discussions:** (Fill in any comments and suggestions here)
+
+
+Tasks done: 
+1) Created a server which hosts our data
+2) Link to the tutorial - https://www.simplifiedcoding.net/php-android-tutorial-part-1/
+
+Tasks for Vikas: Learn about creating a grid view to display data from server( Right now you can focus on
+creating a grid view without bringing server into picture.
+Plan the looks and contents of each page. Frame down the background details. Ex. How the start page looks like?
+Who can login? What's the next page? Do we need to create a tab-view or a list-view to display data? 
+  
+Tasks for Akash: Get the server running, write PHP code to extract and insert data into server. 
+
+Comments: .....
 
