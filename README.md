@@ -28,5 +28,7 @@ Who can login? What's the next page? Do we need to create a tab-view or a list-v
   
 Tasks for Akash: Get the server running, write PHP code to extract and insert data into server. 
 
-Comments: .....
+Comments: I haven't created an Android studio project yet, will do in sometime. Then you can clone the project and 
+import into your Android Studio. Meanwhile try cloning this repo and push another test file which I can pull and you try 
+pulling the files I have pushed into your local machine! You need to pull before you can push!
 
