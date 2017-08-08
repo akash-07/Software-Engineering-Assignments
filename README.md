@@ -22,7 +22,7 @@ Tasks done:
 2) Link to the tutorial - https://www.simplifiedcoding.net/php-android-tutorial-part-1/
 
 Tasks for Vikas: Learn about creating a grid view to display data from server( Right now you can focus on
-creating a grid view without bringing server into picture.
+creating a grid view without bringing server into picture).
 Plan the looks and contents of each page. Frame down the background details. Ex. How the start page looks like?
 Who can login? What's the next page? Do we need to create a tab-view or a list-view to display data? 
   
