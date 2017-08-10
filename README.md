@@ -32,3 +32,4 @@ Comments: I haven't created an Android studio project yet, will do in sometime. 
 import into your Android Studio. Meanwhile try cloning this repo and push another test file which I can pull and you try 
 pulling the files I have pushed into your local machine! You need to pull before you can push!
 
+10/8/2017 7 AM: Got a link of a tutorial for the required view: https://blog.mindorks.com/android-expandable-news-feed-example-4b4544e1fe7e . I can start experimenting if you upload your project file.
