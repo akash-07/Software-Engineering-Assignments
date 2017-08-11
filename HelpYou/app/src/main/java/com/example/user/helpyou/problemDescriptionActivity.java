@@ -1,33 +1,29 @@
 package com.example.user.helpyou;
 
-import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONObject;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.util.Iterator;
-
-import javax.net.ssl.HttpsURLConnection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class problemDescriptionActivity extends AppCompatActivity {
 
-    TextView responseTextView = (TextView) findViewById(R.id.responseTextView);
+    public static String REGISTER_URL = "http://anfang.96.lt/insert-db.php";
+    public static final String KEY_NAME = "name";
+    public static final String KEY_ADDRESS = "address";
+    TextView responseTextView;
     EditText nameEditText;
     EditText addEditText;
     Button postButton;
@@ -39,89 +35,41 @@ public class problemDescriptionActivity extends AppCompatActivity {
         nameEditText = (EditText) findViewById(R.id.editTextName);
         addEditText = (EditText) findViewById(R.id.addressEditText);
         postButton = (Button) findViewById(R.id.postButton);
+        responseTextView = (TextView) findViewById(R.id.responseTextView);
     }
 
     public void insert(View view)   {
         String name = nameEditText.getText().toString();
         String address = addEditText.getText().toString();
+        Toast.makeText(getApplicationContext(),"Button clicked",Toast.LENGTH_SHORT).show();
         insertToDatabase(name,address);
+        REGISTER_URL = "http://anfang.96.lt/insert-db.php?name="+name+"&address="+address;
     }
 
-    private void insertToDatabase(String name, String address) {
-        class SendPostRequest extends AsyncTask<String, Void, String> {
-            protected void onPreExecute() {
-            }
-
-            protected String doInBackground(String... arg0) {
-                try {
-                    URL url = new URL("https://...");
-                    JSONObject postDataParams = new JSONObject();
-                    postDataParams.put("name", "abc");
-                    postDataParams.put("address", "Rosen street/210, London");
-                    Log.e("params", postDataParams.toString());
-
-                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                    conn.setReadTimeout(15000);
-                    conn.setConnectTimeout(15000);
-                    conn.setRequestMethod("POST");
-                    conn.setDoInput(true);
-                    conn.setDoOutput(true);
-
-                    OutputStream os = conn.getOutputStream();
-                    BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-                    writer.write(getPostDataString(postDataParams));
-                    writer.flush();
-                    writer.close();
-                    os.close();
-
-                    int responseCode = conn.getResponseCode();
-
-                    if (responseCode == HttpsURLConnection.HTTP_OK) {
-                        BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                        StringBuffer sb = new StringBuffer("");
-                        String line = "";
-
-                        while ((line = in.readLine()) != null) {
-                            sb.append(line);
-                            break;
-                        }
-                        in.close();
-                        return sb.toString();
-                    } else {
-                        return new String("false: " + responseCode);
+    private void insertToDatabase(final String name,final String address){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,REGISTER_URL,
+                new Response.Listener<String>(){
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
                     }
-                } catch (Exception e) {
-                    return new String("Exception: " + e.getMessage());
-                }
-            }
-
+                },
+                new Response.ErrorListener(){
+                    @Override
+                    public void onErrorResponse(VolleyError error)  {
+                        Toast.makeText(getApplicationContext(),error.toString(),Toast.LENGTH_LONG).show();
+                    }
+                }){
             @Override
-            protected void onPostExecute(String result) {
-                //Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
-                responseTextView.setText(result);
+            protected Map<String,String> getParams()    {
+                Map<String,String> params = new HashMap<String,String>();
+                params.put(KEY_NAME,name);
+                params.put(KEY_ADDRESS,address);
+                return params;
             }
-        }
-    }
+        };
 
-    public String getPostDataString(JSONObject params) throws Exception {
-        StringBuilder result = new StringBuilder();
-        boolean first = true;
-
-        Iterator<String> itr = params.keys();
-
-        while(itr.hasNext())    {
-            String key = itr.next();
-            Object value = params.get(key);
-
-            if(first)
-                first = false;
-            else
-                result.append("&");
-
-            result.append(URLEncoder.encode(key,"UTF-8"));
-            result.append("=");
-            result.append(URLEncoder.encode(value.toString(),"UTF-8"));
-        }
-        return result.toString();
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
     }
 }
