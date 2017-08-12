@@ -16,20 +16,36 @@ finishes your work and that's it. We can get help with anything at our doorstep 
 --------------------
 **App status:**
 
-# Tasks accomplished
-1) Created a web server: [myWebsite](http://host-iittp.000webhostapp.com/)
-2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.
-3) Made a post problem page in android which adds new problems of users to our database.
+## Tasks accomplished
 
-![alt text](https://drive.google.com/open?id=0B-BaZ5vBSFAmX0Jvc2ZlYk5WNTA)
+## 1) Created a web server: [myWebsite](http://host-iittp.000webhostapp.com/)
+
+![mywebsite](https://user-images.githubusercontent.com/24961068/29240539-20c5daba-7f85-11e7-8d8f-7d094141d3ff.png)
+
+## 2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.
+
+![sqldatabase](https://user-images.githubusercontent.com/24961068/29240554-5aad7f3a-7f85-11e7-939f-991ad745a4f4.png)
+
+## 3) Made a post problem page in android which adds new problems of users to our database.
+
+![screenshot_2017-08-12-17-10-13](https://user-images.githubusercontent.com/24961068/29240596-fcdb9db4-7f85-11e7-9564-872ef6200ea0.png)
+
+## 4) Made a feed page where you can see all the problems that people posted.
+
+![screenshot_2017-08-12-17-10-42](https://user-images.githubusercontent.com/24961068/29240600-1f0702fc-7f86-11e7-8b9b-737e7a12bbd8.png)
+
+## 5) Very basic prototype of App made and tested with just two activities but involves intense server handling.
+
+![screenshot_2017-08-12-17-08-51](https://user-images.githubusercontent.com/24961068/29240619-5b50ab5a-7f86-11e7-9248-397ccfc590c7.png)
+
+## Tasks left:
+
+**1) UI for replying to the user who posted the problem and exchange of phone numbers between the service provider and problem postor.
+
+**2) Improve the UI for easy access.
 
 --------------------
 **Discussions:** (Fill in any comments and suggestions here)
-
-
-Tasks done: 
-1) Created a server which hosts our data
-2) Link to the tutorial - https://www.simplifiedcoding.net/php-android-tutorial-part-1/
 
 Tasks for Vikas: Learn about creating a grid view to display data from server( Right now you can focus on
 creating a grid view without bringing server into picture).
