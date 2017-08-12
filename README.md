@@ -14,6 +14,16 @@ domain are instantly pinged. The first person who gets back to you gets the job.
 finishes your work and that's it. We can get help with anything at our doorstep with HelpYou :)
 
 --------------------
+**App status:**
+
+# Tasks accomplished
+1) Created a web server: [myWebsite](http://host-iittp.000webhostapp.com/)
+2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.
+3) Made a post problem page in android which adds new problems of users to our database.
+
+![alt text](https://drive.google.com/open?id=0B-BaZ5vBSFAmX0Jvc2ZlYk5WNTA)
+
+--------------------
 **Discussions:** (Fill in any comments and suggestions here)
 
 
@@ -33,3 +43,4 @@ import into your Android Studio. Meanwhile try cloning this repo and push anothe
 pulling the files I have pushed into your local machine! You need to pull before you can push!
 
 10/8/2017 7 AM: Got a link of a tutorial for the required view: https://blog.mindorks.com/android-expandable-news-feed-example-4b4544e1fe7e . I can start experimenting if you upload your project file.
+
