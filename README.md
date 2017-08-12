@@ -14,9 +14,9 @@ domain are instantly pinged. The first person who gets back to you gets the job.
 finishes your work and that's it. We can get help with anything at our doorstep with HelpYou :)
 
 --------------------
-**App status:
+**App status:**
 
-**Tasks accomplished
+**Tasks accomplished**
 
 **1) Created a web server: [Link](http://host-iittp.000webhostapp.com/)**
 
@@ -24,7 +24,7 @@ finishes your work and that's it. We can get help with anything at our doorstep 
 
 **2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.**
 
-![sqldatabase](https://user-images.githubusercontent.com/24961068/29240755-0e348d34-7f89-11e7-800e-de0aa8d8e85e.jpg)
+![sqldatabase](https://user-images.githubusercontent.com/24961068/29240786-b5dabffe-7f89-11e7-98d1-de6ff126c8c4.jpg)
 
 **3) Made a post problem page in android which adds new problems of users to our database.**
 
