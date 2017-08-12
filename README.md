@@ -14,38 +14,38 @@ domain are instantly pinged. The first person who gets back to you gets the job.
 finishes your work and that's it. We can get help with anything at our doorstep with HelpYou :)
 
 --------------------
-### App status:
+**App status:
 
-## Tasks accomplished
+**Tasks accomplished
 
-## 1) Created a web server: [myWebsite](http://host-iittp.000webhostapp.com/)
+**1) Created a web server: [Link](http://host-iittp.000webhostapp.com/)**
 
-![mywebsite](https://user-images.githubusercontent.com/24961068/29240539-20c5daba-7f85-11e7-8d8f-7d094141d3ff.png)
+![mywebsite](https://user-images.githubusercontent.com/24961068/29240751-f7007c9a-7f88-11e7-8c5d-5ec3df2ef601.jpg)
 
-## 2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.
+**2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.**
 
-![sqldatabase](https://user-images.githubusercontent.com/24961068/29240554-5aad7f3a-7f85-11e7-939f-991ad745a4f4.png)
+![sqldatabase](https://user-images.githubusercontent.com/24961068/29240755-0e348d34-7f89-11e7-800e-de0aa8d8e85e.jpg)
 
-## 3) Made a post problem page in android which adds new problems of users to our database.
+**3) Made a post problem page in android which adds new problems of users to our database.**
 
 ![screenshot_2017-08-12-17-10-13](https://user-images.githubusercontent.com/24961068/29240729-978b43a8-7f88-11e7-9ab6-87f0105cc295.jpg)
 
 
-## 4) Made a feed page where you can see all the problems that people posted.
+**4) Made a feed page where you can see all the problems that people posted.**
 
 ![screenshot_2017-08-12-17-10-42](https://user-images.githubusercontent.com/24961068/29240733-b3105136-7f88-11e7-85b3-4c431ee0a268.jpg)
 
 
-## 5) Very basic prototype of App made and tested with just two activities but involves intense server handling.
+**5) Very basic prototype of App made and tested with just two activities but involves intense server handling.**
 
 ![screenshot_2017-08-12-17-08-51](https://user-images.githubusercontent.com/24961068/29240715-6f9ec810-7f88-11e7-8709-8e86601a5ab9.jpg)
 
 
-## Tasks left:
+**Tasks left:**
 
-# 1) UI for replying to the user who posted the problem and exchange of phone numbers between the service provider and problem postor.
+1) UI for replying to the user who posted the problem and exchange of phone numbers between the service provider and problem postor.
 
-# 2) Improve the UI for easy access.
+2) Improve the UI for easy access.
 
 --------------------
 **Discussions:** (Fill in any comments and suggestions here)
