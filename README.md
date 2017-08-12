@@ -14,7 +14,7 @@ domain are instantly pinged. The first person who gets back to you gets the job.
 finishes your work and that's it. We can get help with anything at our doorstep with HelpYou :)
 
 --------------------
-**App status:**
+### App status:
 
 ## Tasks accomplished
 
@@ -40,9 +40,9 @@ finishes your work and that's it. We can get help with anything at our doorstep 
 
 ## Tasks left:
 
-**1) UI for replying to the user who posted the problem and exchange of phone numbers between the service provider and problem postor.
+# 1) UI for replying to the user who posted the problem and exchange of phone numbers between the service provider and problem postor.
 
-**2) Improve the UI for easy access.
+# 2) Improve the UI for easy access.
 
 --------------------
 **Discussions:** (Fill in any comments and suggestions here)
