@@ -28,15 +28,18 @@ finishes your work and that's it. We can get help with anything at our doorstep 
 
 ## 3) Made a post problem page in android which adds new problems of users to our database.
 
-![screenshot_2017-08-12-17-10-13](https://user-images.githubusercontent.com/24961068/29240596-fcdb9db4-7f85-11e7-9564-872ef6200ea0.png)
+![screenshot_2017-08-12-17-10-13](https://user-images.githubusercontent.com/24961068/29240729-978b43a8-7f88-11e7-9ab6-87f0105cc295.jpg)
+
 
 ## 4) Made a feed page where you can see all the problems that people posted.
 
-![screenshot_2017-08-12-17-10-42](https://user-images.githubusercontent.com/24961068/29240600-1f0702fc-7f86-11e7-8b9b-737e7a12bbd8.png)
+![screenshot_2017-08-12-17-10-42](https://user-images.githubusercontent.com/24961068/29240733-b3105136-7f88-11e7-85b3-4c431ee0a268.jpg)
+
 
 ## 5) Very basic prototype of App made and tested with just two activities but involves intense server handling.
 
-![screenshot_2017-08-12-17-08-51](https://user-images.githubusercontent.com/24961068/29240619-5b50ab5a-7f86-11e7-9248-397ccfc590c7.png)
+![screenshot_2017-08-12-17-08-51](https://user-images.githubusercontent.com/24961068/29240715-6f9ec810-7f88-11e7-8709-8e86601a5ab9.jpg)
+
 
 ## Tasks left:
 
