@@ -9,23 +9,23 @@ public class Problem {
     private String area;
     private String timeStamp;
     private String phNo;
-    private Boolean status;
+    private String status;
     private String problemTitle;
     private String probDescription;
 
-    String getName()    {   return name;   }
-    String getArea()    {   return area;    }
-    String getTimeStamp()   {   return timeStamp;    }
-    String getPhNo()    {   return  phNo;   }
-    String getProblemTitle()    {   return problemTitle;    }
-    String getProbDescription() {   return probDescription; }
-    Boolean getStatus() {   return status;  }
+    public String getName()    {   return name;   }
+    public String getArea()    {   return area;    }
+    public String getTimeStamp()   {   return timeStamp;    }
+    public String getPhNo()    {   return  phNo;   }
+    public String getProblemTitle()    {   return problemTitle;    }
+    public String getProbDescription() {   return probDescription; }
+    public String getStatus() {   return status;  }
 
-    void setName(String name)   {   this.name = name;   }
-    void setArea(String area)   {   this.area = area;   }
-    void setTimeStamp(String timeStamp) {   this.timeStamp = timeStamp; }
-    void setPhNo(String phNo)   {    this.phNo = phNo;   }
-    void setStatus(Boolean status)  {   this.status = status;   }
-    void setProblemTitle(String problemTitle)   {   this.problemTitle = problemTitle;   }
-    void setProbDescription(String probDescription) {   this.probDescription = probDescription; }
+    public void setName(String name)   {   this.name = name;   }
+    public void setArea(String area)   {   this.area = area;   }
+    public void setTimeStamp(String timeStamp) {   this.timeStamp = timeStamp; }
+    public void setPhNo(String phNo)   {    this.phNo = phNo;   }
+    public void setStatus(String status)  {   this.status = status;   }
+    public void setProblemTitle(String problemTitle)   {   this.problemTitle = problemTitle;   }
+    public void setProbDescription(String probDescription) {   this.probDescription = probDescription; }
 }

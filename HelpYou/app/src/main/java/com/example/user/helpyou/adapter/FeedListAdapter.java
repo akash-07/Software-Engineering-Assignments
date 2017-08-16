@@ -13,6 +13,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.example.user.helpyou.R;
 import com.example.user.helpyou.app.AppController;
 import com.example.user.helpyou.data.FeedItem;
+import com.example.user.helpyou.data.Problem;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -25,22 +26,22 @@ import java.util.List;
 public class FeedListAdapter extends BaseAdapter{
     private Activity activity;
     private LayoutInflater inflater;
-    private List<FeedItem> feedItems;
+    private List<Problem> problems;
     ImageLoader imageLoader = AppController.getInstance().getmImageLoader();
 
-    public FeedListAdapter(Activity activity,List<FeedItem> feedItems)  {
+    public FeedListAdapter(Activity activity,List<Problem> problems)  {
         this.activity = activity;
-        this.feedItems = feedItems;
+        this.problems = problems;
     }
 
     @Override
     public int getCount()   {
-        return feedItems.size();
+        return problems.size();
     }
 
     @Override
     public Object getItem(int location) {
-        return feedItems.get(location);
+        return problems.get(location);
     }
 
     @Override
@@ -59,76 +60,27 @@ public class FeedListAdapter extends BaseAdapter{
 
         TextView name = (TextView) convertView.findViewById(R.id.name);
         TextView timeStamp = (TextView) convertView.findViewById(R.id.timestamp);
-        TextView statusMsg = (TextView) convertView
-                .findViewById(R.id.txtStatusMsg);
-        TextView url = (TextView) convertView.findViewById(R.id.txtUrl);
-        /*
-        NetworkImageView profilePic = (NetworkImageView) convertView;
+        TextView statusMsg = (TextView) convertView.findViewById(R.id.txtStatus);
+        TextView title = (TextView) convertView.findViewById(R.id.txtTitle);
+        Problem problem = problems.get(position);
 
-                .findViewById(R.id.profilePic);
-        FeedImageView feedImageView = (FeedImageView) convertView
-                .findViewById(R.id.feedImage1);
-        */
-        FeedItem item = feedItems.get(position);
+        //Setting name
+        name.setText(problem.getName());
 
-        name.setText(item.getName());
-
-        //Converting timeStamp into x ago format
-        /*
-        CharSequence timeAgo = DateUtils.getRelativeTimeSpanString(
-                Long.parseLong(item.getTimeStamp()),
-                System.currentTimeMillis(), DateUtils.SECOND_IN_MILLIS);
-        timeStamp.setText(timeAgo);
-        */
-        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        timeStamp.setText(currentDateTimeString);
-        //Check for empty status message
-        if (!TextUtils.isEmpty(item.getStatus())) {
-            statusMsg.setText(item.getStatus());
-            statusMsg.setVisibility(View.VISIBLE);
+        //Setting statusMsg
+        if (problem.getStatus().equals("true")) {
+            statusMsg.setText("Status: Accepted");
         } else {
             // status is empty, remove from view
-            statusMsg.setVisibility(View.GONE);
+            statusMsg.setText("Status: Not yet Recognised");
         }
 
-        //Checking for null feed url
-        /*
-        if (item.getUrl() != null) {
-            url.setText(Html.fromHtml("<a href=\"" + item.getUrl() + "\">"
-                    + item.getUrl() + "</a> "));
+        //Setting timeStamp
+        timeStamp.setText(problem.getTimeStamp());
 
-            // Making url clickable
-            url.setMovementMethod(LinkMovementMethod.getInstance());
-            url.setVisibility(View.VISIBLE);
-        } else {
-            // url is null, remove from the view
-            url.setVisibility(View.GONE);
-        }*/
-        //Setting it to null
-        url.setVisibility(View.GONE);
+        //Settine problemTitle
+        title.setText("Problem: "+ problem.getProblemTitle());
 
-
-        //user profile pic
-        //profilePic.setImageUrl(item.getProfilePic(),imageLoader);
-
-        /*
-        //Feed image
-        if(item.getImge() != null)  {
-            feedImageView.setImageUrl(item.getImge(),imageLoader);
-            feedImageView.setVisibility(View.VISIBLE);
-            feedImageView.setResponseObserver(new FeedImageView.ResponseObserver()  {
-                @Override
-                public void onError() {
-                }
-
-                @Override
-                public void onSuccess() {
-                }
-            });
-        } else {
-            feedImageView.setVisibility(View.GONE);
-        }
-        */
         return convertView;
     }
 }
