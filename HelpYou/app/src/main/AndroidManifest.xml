@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".problemDescriptionActivity" />
         <activity android:name=".problemsActivity" />
-        <activity android:name=".problemFeed"></activity>
+        <activity android:name=".problemFeed" />
+        <activity android:name=".myProblemsActivity"></activity>
     </application>
 
 </manifest>

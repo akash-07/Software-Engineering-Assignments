@@ -16,12 +16,36 @@
     android:layout_above="@+id/refreshButton"
     android:divider="@null">
 </ListView>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/refreshButton"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:text="Refresh"
-        android:onClick="refreshList"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refreshButton"
+            android:text="Refresh"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="refreshList"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goToProblemHistoryButton"
+            android:text="  MY Problems"
+            android:layout_toRightOf="@+id/refreshButton"
+            android:onClick="goToMyProblemsActivity"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addNewProblemButton"
+            android:text="New problem"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="goToAddProblemPage"
+            android:layout_toRightOf="@+id/goToProblemHistoryButton"/>
 </RelativeLayout>

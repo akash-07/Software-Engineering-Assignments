@@ -1,6 +1,7 @@
 package com.example.user.helpyou;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.example.user.helpyou.adapter.FeedListAdapter;
 import com.example.user.helpyou.app.AppController;
 import com.example.user.helpyou.data.FeedItem;
+import com.example.user.helpyou.data.Problem;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,18 +30,19 @@ import java.util.Collections;
 import java.util.List;
 
 public class problemFeed extends AppCompatActivity {
-
-    public static String[] names;
-    public static String[] addresses;
-
-    public static final String JSON_ARRAY = "result";
+    public ArrayList<Problem> problems;
     public static final String KEY_NAME = "name";
-    public static final String KEY_ADDRESS = "address";
+    public static final String KEY_AREA = "area";
+    public static final String KEY_PHNO = "phNo";
+    public static final String KEY_TITLE = "problemTitle";
+    public static final String KEY_DESCRIPTION = "problemDescription";
+    public static final String KEY_STATUS = "status";
+    public static final String KEY_TIMESTAMP = "timeStamp";
+    public static final String JSON_ARRAY = "result";
     private static final String TAG = problemFeed.class.getSimpleName();
     private ListView listView;
     private FeedListAdapter listAdapter;
-    private List<FeedItem> feedItems;
-    private String URL_FEED = "https://host-iittp.000webhostapp.com/myFiles/get-db.php";
+    private String URL_FEED = "https://host-iittp.000webhostapp.com/myFiles/getProblem-db.php";
 
     @SuppressLint("NewApi")
 
@@ -47,10 +50,9 @@ public class problemFeed extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem_feed);
-
+        problems = new ArrayList<>();
         listView = (ListView)findViewById(R.id.listViewProblemFeed);
-        feedItems = new ArrayList<>();
-        listAdapter = new FeedListAdapter(this,feedItems);
+        listAdapter = new FeedListAdapter(this,problems);
         listView.setAdapter(listAdapter);
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3b5998")));
@@ -107,32 +109,33 @@ public class problemFeed extends AppCompatActivity {
         try {
             jsonObject = new JSONObject(json);
             JSONArray users = jsonObject.getJSONArray(JSON_ARRAY);
-            names = new String[users.length()];
-            addresses = new String[users.length()];
             for (int i = 0; i < users.length(); i++) {
                 JSONObject jo = users.getJSONObject(i);
-                names[i] = jo.getString(KEY_NAME);
-                addresses[i] = jo.getString(KEY_ADDRESS);
-                FeedItem item = new FeedItem();
-                item.setId(i+1);
-                item.setImge(null);
-                item.setName(names[i]);
-                item.setStatus(addresses[i]);
-                //item.setProfilePic("http://api.androidhive.info/feed/img/nat.jpg");
-                /*
-                int time = (int) (System.currentTimeMillis());
-                Timestamp tsTemp = new Timestamp(time);
-                String ts =  tsTemp.toString();
-                item.setTimeStamp(ts);
-                */
-                item.setUrl(null);
-                feedItems.add(item);
+                Problem problem = new Problem();
+                problem.setName(jo.getString(KEY_NAME).replaceAll("_"," "));
+                problem.setArea(jo.getString(KEY_AREA).replaceAll("_"," "));
+                problem.setPhNo(jo.getString(KEY_PHNO).replaceAll("_"," "));
+                problem.setProblemTitle(jo.getString(KEY_TITLE).replaceAll("_"," "));
+                problem.setProbDescription(jo.getString(KEY_DESCRIPTION).replaceAll("_"," "));
+                problem.setStatus(jo.getString(KEY_STATUS.replaceAll("_"," ")));
+                problem.setTimeStamp(jo.getString(KEY_TIMESTAMP).replaceAll("_"," "));
+                problems.add(problem);
             }
-            Collections.reverse(feedItems);
+            Collections.reverse(problems);
             listAdapter.notifyDataSetChanged();
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public void goToAddProblemPage(View view)    {
+        Intent intent = new Intent(this,problemDescriptionActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToMyProblemsActivity(View v)  {
+        Intent intent = new Intent(this,myProblemsActivity.class);
+        startActivity(intent);
     }
 
 }

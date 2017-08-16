@@ -1,5 +1,6 @@
 package com.example.user.helpyou;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -74,4 +75,6 @@ public class problemsActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         sendRequest();
     }
+
+
 }

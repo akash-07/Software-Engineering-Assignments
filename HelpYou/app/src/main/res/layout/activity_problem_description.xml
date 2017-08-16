@@ -29,20 +29,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/addressTextView"
+        android:id="@+id/areaTextView"
         android:layout_below="@id/editTextName"
-        android:text="Problem_Description"/>
+        android:text="Area"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addressTextView"
-        android:id="@+id/addressEditText"/>
+        android:layout_below="@+id/areaTextView"
+        android:id="@+id/areaEditText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/problemTitleTextView"
+        android:layout_below="@id/areaEditText"
+        android:text="Problem Title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/problemTitleTextView"
+        android:id="@+id/problemTitleEditText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/problemDescriptionTextView"
+        android:layout_below="@id/problemTitleEditText"
+        android:text="Problem Description"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/problemDescriptionTextView"
+        android:id="@+id/problemDescriptionEditText"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post"
         android:id="@+id/postButton"
         android:onClick="insert"
-        android:layout_below="@+id/addressEditText"/>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
