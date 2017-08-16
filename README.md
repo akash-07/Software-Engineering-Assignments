@@ -14,12 +14,41 @@ domain are instantly pinged. The first person who gets back to you gets the job.
 finishes your work and that's it. We can get help with anything at our doorstep with HelpYou :)
 
 --------------------
+**App status:**
+
+**Tasks accomplished**
+
+**1) Created a web server: [Link](http://host-iittp.000webhostapp.com/)**
+
+![mywebsite](https://user-images.githubusercontent.com/24961068/29240751-f7007c9a-7f88-11e7-8c5d-5ec3df2ef601.jpg)
+
+**2) Created a database and wrote PHP scripts to send and retrieve data from this database hosted by the server.**
+
+![sqldatabase](https://user-images.githubusercontent.com/24961068/29240786-b5dabffe-7f89-11e7-98d1-de6ff126c8c4.jpg)
+
+**3) Made a post problem page in android which adds new problems of users to our database.**
+
+![screenshot_2017-08-12-17-10-13](https://user-images.githubusercontent.com/24961068/29240729-978b43a8-7f88-11e7-9ab6-87f0105cc295.jpg)
+
+
+**4) Made a feed page where you can see all the problems that people posted.**
+
+![screenshot_2017-08-12-17-10-42](https://user-images.githubusercontent.com/24961068/29240733-b3105136-7f88-11e7-85b3-4c431ee0a268.jpg)
+
+
+**5) Very basic prototype of App made and tested with just two activities but involves intense server handling.**
+
+![screenshot_2017-08-12-17-08-51](https://user-images.githubusercontent.com/24961068/29240715-6f9ec810-7f88-11e7-8709-8e86601a5ab9.jpg)
+
+
+**Tasks left:**
+
+1) UI for replying to the user who posted the problem and exchange of phone numbers between the service provider and problem postor.
+
+2) Improve the UI for easy access.
+
+--------------------
 **Discussions:** (Fill in any comments and suggestions here)
-
-
-Tasks done: 
-1) Created a server which hosts our data
-2) Link to the tutorial - https://www.simplifiedcoding.net/php-android-tutorial-part-1/
 
 Tasks for Vikas: Learn about creating a grid view to display data from server( Right now you can focus on
 creating a grid view without bringing server into picture).
@@ -33,3 +62,4 @@ import into your Android Studio. Meanwhile try cloning this repo and push anothe
 pulling the files I have pushed into your local machine! You need to pull before you can push!
 
 10/8/2017 7 AM: Got a link of a tutorial for the required view: https://blog.mindorks.com/android-expandable-news-feed-example-4b4544e1fe7e . I can start experimenting if you upload your project file.
+
