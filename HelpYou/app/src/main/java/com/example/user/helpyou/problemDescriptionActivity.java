@@ -14,13 +14,14 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.user.helpyou.app.AppController;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class problemDescriptionActivity extends AppCompatActivity {
 
-    public static String REGISTER_URL = "http://anfang.96.lt/insert-db.php";
+    public static String REGISTER_URL = "https://host-iittp.000webhostapp.com/myFiles/insert1-db.php";
     public static final String KEY_NAME = "name";
     public static final String KEY_ADDRESS = "address";
     TextView responseTextView;
@@ -35,15 +36,14 @@ public class problemDescriptionActivity extends AppCompatActivity {
         nameEditText = (EditText) findViewById(R.id.editTextName);
         addEditText = (EditText) findViewById(R.id.addressEditText);
         postButton = (Button) findViewById(R.id.postButton);
-        responseTextView = (TextView) findViewById(R.id.responseTextView);
     }
 
     public void insert(View view)   {
         String name = nameEditText.getText().toString();
         String address = addEditText.getText().toString();
-        Toast.makeText(getApplicationContext(),"Button clicked",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Posting your problem....",Toast.LENGTH_SHORT).show();
+        REGISTER_URL = "https://host-iittp.000webhostapp.com/myFiles/insert1-db.php?name="+name+"&address="+address;
         insertToDatabase(name,address);
-        REGISTER_URL = "http://anfang.96.lt/insert-db.php?name="+name+"&address="+address;
     }
 
     private void insertToDatabase(final String name,final String address){
@@ -69,7 +69,9 @@ public class problemDescriptionActivity extends AppCompatActivity {
             }
         };
 
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+        //RequestQueue requestQueue = Volley.newRequestQueue(this);
+        //requestQueue.add(stringRequest);
+        AppController.getInstance().addToRequestQueue(stringRequest);
     }
+
 }

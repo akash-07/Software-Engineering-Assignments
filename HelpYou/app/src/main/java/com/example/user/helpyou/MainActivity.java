@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,problemDescriptionActivity.class);
         startActivity(intent);
     }
+
+    public void goToProblemsPage(View view){
+        Intent intent = new Intent(this,problemFeed.class);
+        startActivity(intent);
+    }
 }
