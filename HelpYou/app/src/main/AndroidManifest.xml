@@ -21,7 +21,9 @@
         <activity android:name=".problemDescriptionActivity" />
         <activity android:name=".problemsActivity" />
         <activity android:name=".problemFeed" />
-        <activity android:name=".myProblemsActivity"></activity>
+        <activity android:name=".myProblemsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".registerAcitivity"></activity>
     </application>
 
 </manifest>
