@@ -1,1 +1,0 @@
-Throwing exceptions breaks referential transparency.
