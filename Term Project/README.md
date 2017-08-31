@@ -70,10 +70,10 @@ Each chapter has to be read in detail and understood. Since this pure FP, finish
 Functional data structures has been skipped because I am already aware of the concepts. The proposed plan is as above but is subject to changes depending upon how the project proceeds and other constraints. The order of 
 chapters/patterns maybe changed.
 
-2) **Additionally the only lecture in same direction I found was:** [Functional programming design patterns by Scott Wlaschin](https://vimeo.com/113588389)
+**2) Additionally the only lecture in same direction I found was:** [Functional programming design patterns by Scott Wlaschin](https://vimeo.com/113588389)
 
-3) **Blog:** [Functional design patterns](https://www.ibm.com/developerworks/library/j-ft10/index.html)
+**3) Blog:** [Functional design patterns](https://www.ibm.com/developerworks/library/j-ft10/index.html)
 
-4) **Lecture:** [Clojure-design-patterns](https://www.infoq.com/presentations/Clojure-Design-Patterns)
+**4) Lecture:** [Clojure-design-patterns](https://www.infoq.com/presentations/Clojure-Design-Patterns)
 
 So this is all I have. The goal is clear. The only concern is whether it is possible to follow the timeline and comeup with appropriate design patterns by the end of this semester since there are no buffer weeks in my timeline.
