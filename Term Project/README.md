@@ -1,11 +1,13 @@
 **Project Goal:**
 
 Mapping design patterns in OOP for developing softwares to Functional paradigm and demonstration using Scala.
+
 ---
 
 **Project resources and Plan**
 
 Being a completely unventured area, no research papers were found. The resources I have are as follows:
+
 ---
 
 **1) Functional Programming in Scala by Paul Chiusano and Runar Bjarnason**
