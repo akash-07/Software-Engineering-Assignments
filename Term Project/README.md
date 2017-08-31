@@ -24,10 +24,10 @@ I) Breaking the rules: Effects and I/O
 Each chapter has to be read in detail and understood. Since this pure FP, finishing one chapter itself takes lot of time and additionally figuring out patterns makes it more tedious, hence the timeline below. 
 
 For each design pattern, I will provide:
--- A comprehensive explanation.
--- Use cases with examples taken from [47 Degree: Fp in Scala exercises](https://www.scala-exercises.org/) 
--- Advantages over OOP.
--- Demonstration using Scala.
+..*A comprehensive explanation.
+..*Use cases with examples taken from [47 Degree: Fp in Scala exercises](https://www.scala-exercises.org/) 
+..*Advantages over OOP.
+..*Demonstration using Scala.
 
 Target is one pattern(one chapter)/week as follows:
 
@@ -62,8 +62,8 @@ chapters/patterns maybe changed.
 
 [Functional programming design patterns by Scott Wlaschin](https://vimeo.com/113588389)
 
-3) [Functional design patterns] (https://www.ibm.com/developerworks/library/j-ft10/index.html)
+3) [Functional design patterns](https://www.ibm.com/developerworks/library/j-ft10/index.html)
 
-4) [Another lecture] (https://www.infoq.com/presentations/Clojure-Design-Patterns)
+4) [Another lecture](https://www.infoq.com/presentations/Clojure-Design-Patterns)
 
 So this is all I have. The goal is clear. The only concern is whether it is possible to follow the timeline and comeup with appropriate design patterns by the end of this semester since there are no buffer weeks in my timeline.
