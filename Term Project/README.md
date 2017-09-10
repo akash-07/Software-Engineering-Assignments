@@ -12,72 +12,27 @@ Being a completely unventured area, no research papers were found. The resources
 
 **1) Functional Programming in Scala by Paul Chiusano and Runar Bjarnason**
 
-This book is must read for my project since each chapter in this book demonstrates a pattern for coding in Functional style. So here is the list of must read chapters whereby I'll be able to map the design patterns in Sofware Engineering and general OOP to FP paradigm.
-
-A) Functional data structures
-
-B) Handling erros without exceptions
-
-C) Purely functional state
-
-D) Purely functional parallelism
-
-E) Property-based testing
-
-F) Monoids
-
-G) Monads
-
-H) Applicative and traversable functors
-
-I) Breaking the rules: Effects and I/O
- (Includes three chapters equivalent to each one above)
-
-Each chapter has to be read in detail and understood. Since this pure FP, finishing one chapter itself takes lot of time and additionally figuring out patterns makes it more tedious, hence the timeline below. 
-
-**For each design pattern, I will provide:**
-
-1. A comprehensive explanation.
-
-2. Use cases with examples taken from [47 Degree: Fp in Scala exercises](https://www.scala-exercises.org/) 
-
-3. Advantages over OOP.
-
-4. Demonstration using Scala.
-
-**Target is one pattern(one chapter)/week as follows:**
-
-28/8 - 3/9    => Handling errors without exceptions
-
-4/9  - 10/9   => Monoids
-
-11/8 - 17/9   => Quiz Week
-
-18/9 - 24/9   => Monads
-
-25/9 - 1/10   => Purely functional parallelism
-
-2/10 - 8/10   => Purely functional state
-
-9/10 - 15/10  => Applicative and traversable functors
-
-16/10 - 22/10 => Property based testing
-
-23/10 - 29/10 => Quiz week
-
-30/10 - 5/11  => Breaking the rules: Effects and I/O
-
-6/11 - 12/11  => Breaking the rules: Effects and I/O
-
-13/11 - 19/11 => Wrap up and final demonstration
-
-Functional data structures has been skipped because I am already aware of the concepts. The proposed plan is as above but is subject to changes depending upon how the project proceeds and other constraints. The order of 
-chapters/patterns maybe changed.
-
 **2) Additionally the only lecture in same direction I found was:** [Functional programming design patterns by Scott Wlaschin](https://vimeo.com/113588389)
 
-**3) Blog:** [Functional design patterns](https://www.ibm.com/developerworks/library/j-ft10/index.html)
+**3) Design Patterns: Elements of Reusable Object-Oriented Software Book by by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, Grady Booch (The Gang of Four)**
 
-**4) Lecture:** [Clojure-design-patterns](https://www.infoq.com/presentations/Clojure-Design-Patterns)
+**4) Functional Programming Patterns in Scala and Clojure by Micheal Linn.**
 
-So this is all I have. The goal is clear. The only concern is whether it is possible to follow the timeline and comeup with appropriate design patterns by the end of this semester since there are no buffer weeks in my timeline.
+**5) Research paper:** [https://www.scala-lang.org/old/sites/default/files/FrederikThesis.pdf]
+
+---
+
+**Updates on Work 9/10/17**
+
+1) Reading Gang of Four Book to understand patterns in Object Oriented World.
+
+2) No writing for paper has been done yet. I started with work rather than literature for paper. Will do the work as soon as quiz ends.
+
+3) Finished Mapping **Pattern 1: Functional Interfaces**. The code with comments for demonstration can be found here[https://github.com/akash-07/Software-Engineering-Assignments/tree/master/Term%20Project/Patterns/src/main/scala].
+
+No write up for functional interfaces has been done. The comments do explain a few things.
+
+4) ** Pattern 2: Handling exceptions** is being worked upon. The writeup can be found here[https://github.com/akash-07/Software-Engineering-Assignments/blob/master/Term%20Project/handlingExceptions/readMe.md]. 
+
+No code has been written yet for pattern demonstration.
+
