@@ -28,7 +28,7 @@ Being a completely unventured area, no research papers were found. The resources
 
 2) No writing for paper has been done yet. I started with work rather than literature for paper. Will start writing as soon as quiz ends.
 
-3) Finished Mapping **Pattern 1: Functional Interfaces**. The code with comments for demonstration can be found [here](https://github.com/akash-07/Software-Engineering-Assignments/tree/master/Term%20Project/Patterns/src/main/scala).No write up for functional interfaces has been done. The comments do explain a few things.
+3) Finished Mapping **Pattern 1: Functional Interfaces**. The code with comments for demonstration can be found [here](https://github.com/akash-07/Software-Engineering-Assignments/tree/master/Term%20Project/Patterns/src/main/scala). No write up for functional interfaces has been done. The comments do explain a few things.
 
 4) **Pattern 2: Handling exceptions** is being worked upon. The writeup for the pattern and it's explanation can be found [here](https://github.com/akash-07/Software-Engineering-Assignments/blob/master/Term%20Project/handlingExceptions/readMe.md). No code has been written yet for pattern demonstration.
 
