@@ -1,4 +1,4 @@
-**Template Pattern:**
+**Template Pattern**
 
 The Gang Of Four states template pattern as : *Define the skeleton of an algorithm, deferring 
 some steps to subclasses*. Essentially the template pattern is used when two or more implementations 
