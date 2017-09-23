@@ -4,7 +4,7 @@
 		module="template_pattern-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170914102835"
+		publication="20170921190752"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

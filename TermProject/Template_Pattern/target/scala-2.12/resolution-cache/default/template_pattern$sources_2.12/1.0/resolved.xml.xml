@@ -4,7 +4,7 @@
 		module="template_pattern$sources_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170914102851"
+		publication="20170921190041"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
