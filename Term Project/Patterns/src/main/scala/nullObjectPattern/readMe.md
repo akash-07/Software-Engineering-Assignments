@@ -1,8 +1,7 @@
 **The `null` Object Pattern**
 
 `null` values essentially denote absence of an object or absence of an instance of 
-some reference type. Suppose we were to call a method on an object  
- of a class where the object is the result of some other computation.
+some reference type. Suppose we were to call a method on an object of a class where the object is the result of some other computation.
   But it might so happen that we end up 
  getting a `null` value instead of a concrete object. To make sure we don't call methods on 
  `null` values, we end up writing `null` checks through out our code 
