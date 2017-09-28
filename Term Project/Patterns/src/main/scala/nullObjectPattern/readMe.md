@@ -129,6 +129,9 @@ scala> personMap.getOrElse(5,Person())
 res3: Person = Person(John,Parker)
 ```
 
+The second arguement of `getOrElse` specifies the default value to be 
+returned when no value is found corresponding to given key. In our case 
+we simple choose to return the default `Person()`.
 Since `personMap` did not have any value corresponding to key 5, we 
 returned the default `Person()`. Now we can write the `fetchPerson` function 
 as follows:
@@ -138,6 +141,11 @@ scala> def fetchPerson(personMap: Map[Int,Person], id:Int): Person =
      | personMap.getOrElse(id, Person())
 fetchPerson: (personMap: Map[Int,Person], id: Int)Person
 ```
+`fetchPerson` takes in as arguement a `Map` from `Int` to `Person` and 
+an `id` as the key. If a value corresponding to given key if found, 
+it unwraps the value from `Some` and returns it(remember `getOrElse`). 
+When no value is found, it returns the default `Person()`. `getOrElse` 
+takes care of wrapping and unwrapping values for us.
 Let's check whether it works as desired.
 
 ```scala
@@ -208,7 +216,9 @@ pair corresponding to key 6, hence it returned `None`. And essentially since
 **Conclusion:** We can use `Option` type wherever there is possibility of 
  non-existence of some Object. We can make the function return `Option[A]` 
  if we are not sure whether the function can always return a value of type 
- `A`. Once we step into the parallel world of `Options`, we can keep working 
+ `A`. The `Option` type itself suggests that the function might not always return 
+  a value. The type captures everything, and this is what we mean **totality** and 
+  handling `nulls` in a **type-safe** manner. Once we step into the parallel world of `Options`, we can keep working 
  in the same world by lifting our functions that operate on types in real 
  world to ones that operate in the world of `Option`s. Functional languagues 
  provide handful of functions to deal with these situations, take `map`, 
