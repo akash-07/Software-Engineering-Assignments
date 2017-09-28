@@ -26,6 +26,7 @@ some reference type. Suppose we were to call a method on an object of a class wh
    are empty, in which case we return a an instance of `NullPerson`.
    
    ```java
+   //This is Java
     abstract class Person {
         protected String firstName;
         protected String lastName;
@@ -163,6 +164,7 @@ to a `null` value. So let's do it by adding such a key value pair to
 our `personMap` in Java.
 
 ```java
+//This is Java
 Person p1 = new RealPerson("Akash", "Dhasade");
 Person p2 = new RealPerson("Saket", "Joshi");
 Person p3 = new RealPerson("Harry","");
@@ -175,6 +177,7 @@ personMap.put(5, null);
 And then if we do this: 
 
 ```java
+//This is Java
 System.out.println(personMap.get(5));   // prints null
 System.out.println(personMap.get(6));   // prints null
 ```
