@@ -1,9 +1,9 @@
 **The `null` Object Pattern**
 
 `null` values essentially denote absence of an object or absence of an instance of 
-some reference type. Suppose we were to call a  method pertaining 
- of a class but it might so happen that we end up 
- getting a `null` value instead of some object. To make sure we don't call methods on 
+some reference type. Suppose we were to call a method on an object of a class where the object is the result of some other computation.
+  But it might so happen that we end up 
+ getting a `null` value instead of a concrete object. To make sure we don't call methods on 
  `null` values, we end up writing `null` checks through out our code 
  and it becomes messy. A rather general solution would be to 
  create a business meaning-less `null` object. This `null` object 
@@ -26,6 +26,7 @@ some reference type. Suppose we were to call a  method pertaining
    are empty, in which case we return a an instance of `NullPerson`.
    
    ```java
+   //This is Java
     abstract class Person {
         protected String firstName;
         protected String lastName;
@@ -129,6 +130,9 @@ scala> personMap.getOrElse(5,Person())
 res3: Person = Person(John,Parker)
 ```
 
+The second arguement of `getOrElse` specifies the default value to be 
+returned when no value is found corresponding to given key. In our case 
+we simple choose to return the default `Person()`.
 Since `personMap` did not have any value corresponding to key 5, we 
 returned the default `Person()`. Now we can write the `fetchPerson` function 
 as follows:
@@ -138,6 +142,11 @@ scala> def fetchPerson(personMap: Map[Int,Person], id:Int): Person =
      | personMap.getOrElse(id, Person())
 fetchPerson: (personMap: Map[Int,Person], id: Int)Person
 ```
+`fetchPerson` takes in as arguement a `Map` from `Int` to `Person` and 
+an `id` as the key. If a value corresponding to given key if found, 
+it unwraps the value from `Some` and returns it(remember `getOrElse`). 
+When no value is found, it returns the default `Person()`. `getOrElse` 
+takes care of wrapping and unwrapping values for us.
 Let's check whether it works as desired.
 
 ```scala
@@ -155,6 +164,7 @@ to a `null` value. So let's do it by adding such a key value pair to
 our `personMap` in Java.
 
 ```java
+//This is Java
 Person p1 = new RealPerson("Akash", "Dhasade");
 Person p2 = new RealPerson("Saket", "Joshi");
 Person p3 = new RealPerson("Harry","");
@@ -167,6 +177,7 @@ personMap.put(5, null);
 And then if we do this: 
 
 ```java
+//This is Java
 System.out.println(personMap.get(5));   // prints null
 System.out.println(personMap.get(6));   // prints null
 ```
@@ -208,7 +219,9 @@ pair corresponding to key 6, hence it returned `None`. And essentially since
 **Conclusion:** We can use `Option` type wherever there is possibility of 
  non-existence of some Object. We can make the function return `Option[A]` 
  if we are not sure whether the function can always return a value of type 
- `A`. Once we step into the parallel world of `Options`, we can keep working 
+ `A`. The `Option` type itself suggests that the function might not always return 
+  a value. The type captures everything, and this is what we mean **totality** and 
+  handling `nulls` in a **type-safe** manner. Once we step into the parallel world of `Options`, we can keep working 
  in the same world by lifting our functions that operate on types in real 
  world to ones that operate in the world of `Option`s. Functional languagues 
  provide handful of functions to deal with these situations, take `map`, 

@@ -74,7 +74,7 @@ def mean(xs: List[Double]): Option[Double] =
 What can say about this `mean` function? It's a total function now. Each input value is mapped to 
 one output value and the return type reflects the possibility that the result is not always defined.
 
-Where do we see an `Option` type being returned? When we ask for `headOption` on a list or when we 
+What are some common occasions where `Option` type is returned? When we ask for `headOption` on a list or when we 
 look up into a `Map` for a value by a given key.
 
 **How to best visualize `Option` type?**
@@ -110,9 +110,13 @@ essence of this type in error handling. The task which we are going to see is a 
 computations where any computation in the sequence can fail and affect the next one. We will see how to deal with 
 this using the `Option` type. So let's look at few functions.
 
-`map`: This function can be used to transform the result inside an `Option` if it exists. We can 
+**`map`**: This function can be used to transform the result inside an `Option` if it exists. We can 
 think of this as proceeding with a computation assuming no error has occured. In other words we 
-are trying to defer the error to later code.
+are trying to defer the error to later code. Let us recall the type signature of `map`.
+
+```scala
+def map[B](f: A => B): Option[B]
+```
 
 I will try to explain this with an example. The following example will be used throughout the 
 documentation.
@@ -139,7 +143,7 @@ exists and `None` is it doesn't.
 So my first computation in the sequence of computations is to look for an employee by it's name. My 
 second computation would be to get the department of the employee only if my first computation returns some 
 employee or else I would like to return `None`. My `map` function is exactly serves the purpose. 
-It takes in a function `f: A => B` that takes a value of type `A` and returns a value of type `B`. The only thing which `Map` does is, it first unwraps the value from the box, applies `f` and packs it again in the box for me. So essentially it takes care of unwrapping and wrapping for me. 
+It takes in a function `f: A => B` that takes a value of type `A` and returns a value of type `B`. The only thing which `map` does is, it first unwraps the value from the box, applies `f` and packs it again in the box for me. So essentially it takes care of unwrapping and wrapping for me. 
 
 Visual Metaphor:
 
@@ -163,6 +167,23 @@ res1: Option[String] = Some(Finances)
 
 scala> getDepartment(lookupByName("Foo"))
 res2: Option[String] = None
+```
+
+**`flatMap`:** It applies function `f` to `Option` if it is 
+not `None` but it may also fail. This failure is captured in the 
+type of `f: A => Option[B]` which says `f` might or might not give 
+a value of type `B`. Let us recall the type signature of `flatMap`.
+
+```scala
+def flatMap[B](f: A => Option[B]): Option[B]
+```
+Let's see how we can use it. We want to find the manager of an employee. 
+Recall that every employee may or may not have a manager. Here is 
+the `getManager` method,
+
+```scala
+def getManager: Option[Employee] => Option[String] = 
+    _ flatMap (e => e.manager)
 ```
 
 
