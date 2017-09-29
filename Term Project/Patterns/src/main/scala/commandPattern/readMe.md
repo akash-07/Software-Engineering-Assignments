@@ -51,7 +51,7 @@ PurchaseInvoker:
 - Simple calls the `execute` method of the `Command` it receives.
 - Also stores the commands in a separate list as the history for playback.
 
-The code in Java can be found here.
+The code in Java can be found [here](https://github.com/akash-07/Software-Engineering-Assignments/blob/master/Term%20Project/Patterns/src/main/scala/commandPattern/test.java).
 
 **Functional Replacement**
 

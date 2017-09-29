@@ -105,16 +105,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/commandPattern/readMe.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="3192">
-                <caret line="152" column="69" lean-forward="false" selection-start-line="152" selection-start-column="69" selection-end-line="152" selection-end-column="69" />
+              <first_editor relative-caret-position="441">
+                <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
                 <folding>
-                  <marker date="1506667199934" expanded="true" signature="3067:3208" ph="{...}" />
-                  <marker date="1506667199934" expanded="true" signature="3098:3123" ph="{...}" />
-                  <marker date="1506667199934" expanded="true" signature="3149:3171" ph="{...}" />
-                  <marker date="1506667199934" expanded="true" signature="3187:3206" ph="{...}" />
-                  <marker date="1506667199934" expanded="true" signature="3679:3761" ph="..." />
-                  <marker date="1506667199934" expanded="true" signature="4364:4421" ph="/.../" />
-                  <marker date="1506667199934" expanded="true" signature="4467:4593" ph="{...}" />
+                  <marker date="1506667402601" expanded="true" signature="3207:3348" ph="{...}" />
+                  <marker date="1506667402601" expanded="true" signature="3238:3263" ph="{...}" />
+                  <marker date="1506667402601" expanded="true" signature="3289:3311" ph="{...}" />
+                  <marker date="1506667402601" expanded="true" signature="3327:3346" ph="{...}" />
+                  <marker date="1506667402601" expanded="true" signature="3819:3901" ph="..." />
+                  <marker date="1506667402601" expanded="true" signature="4504:4561" ph="/.../" />
+                  <marker date="1506667402601" expanded="true" signature="4607:4733" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -704,7 +704,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,7 +730,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33351237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17132115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1005,16 +1005,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/commandPattern/readMe.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3192">
-            <caret line="152" column="69" lean-forward="false" selection-start-line="152" selection-start-column="69" selection-end-line="152" selection-end-column="69" />
+          <first_editor relative-caret-position="441">
+            <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
             <folding>
-              <marker date="1506667199934" expanded="true" signature="3067:3208" ph="{...}" />
-              <marker date="1506667199934" expanded="true" signature="3098:3123" ph="{...}" />
-              <marker date="1506667199934" expanded="true" signature="3149:3171" ph="{...}" />
-              <marker date="1506667199934" expanded="true" signature="3187:3206" ph="{...}" />
-              <marker date="1506667199934" expanded="true" signature="3679:3761" ph="..." />
-              <marker date="1506667199934" expanded="true" signature="4364:4421" ph="/.../" />
-              <marker date="1506667199934" expanded="true" signature="4467:4593" ph="{...}" />
+              <marker date="1506667402601" expanded="true" signature="3207:3348" ph="{...}" />
+              <marker date="1506667402601" expanded="true" signature="3238:3263" ph="{...}" />
+              <marker date="1506667402601" expanded="true" signature="3289:3311" ph="{...}" />
+              <marker date="1506667402601" expanded="true" signature="3327:3346" ph="{...}" />
+              <marker date="1506667402601" expanded="true" signature="3819:3901" ph="..." />
+              <marker date="1506667402601" expanded="true" signature="4504:4561" ph="/.../" />
+              <marker date="1506667402601" expanded="true" signature="4607:4733" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
